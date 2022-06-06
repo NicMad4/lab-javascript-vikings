@@ -31,6 +31,7 @@ class Viking extends Soldier {
 
 // Saxon
 class Saxon extends Soldier {
+
 receiveDamage(damage){
 this.health-=damage;
 if(this.health>0){
@@ -41,7 +42,23 @@ if(this.health>0){
 }
 
 // War
-class War {}
+class War {
+  vikingArmy=[]
+  saxonArmy=[]
+  addViking(Viking){
+    this.vikingArmy.push(Viking)
+  }
+  addSaxon(Saxon){
+    this.saxonArmy.push(Saxon)
+  }
+  vikingAttack(){
+    
+  }
+  saxonAttack(){}
+  showStatus(){}
+
+  
+}
 
 
 
